@@ -26,6 +26,8 @@ Using this example, merge your business layer and create the restservices using 
 
 The goal is to get a clean CRUD API for you business layer that allows to interact with your business services using retful services.
 
+Do not hesitate to follow the same package structure that the package structure used by JHipster.
+
 # Task 2. 
 In following this guide. Integrate swagger with your API
 
