@@ -41,67 +41,9 @@ You can have three choices.
 
 1. You can re-implement [swapi](https://swapi.co/)
 
-2. You can provide a rest access within the [Borg calendar](https://github.com/mikeberger/borg_calendar). In this case, you need to install the [lombok tool](https://projectlombok.org/) for your IDE .
+2. You can provide a rest access within the [Borg calendar](https://github.com/mikeberger/borg_calendar). In this case, you need to install the lombok tool for your IDE [](https://projectlombok.org/).
 
-3. you can provide you own Rest API for your tweeter account [http://twitter4j.org/en/index.html](http://twitter4j.org/en/index.html). 
-
-### 1. SWAPI
-
-Create your domain class,
-
-Create your CRUD Services
-
-Create your REST Services.
-
-### 2. Borg
-
-Clone the project. 
-
-Get the [lombok tool](https://projectlombok.org/) and run it for eclipse. 
-
-Restart eclipse. 
-
-Import the project as maven project. 
-
-Enable Annotation processing for eclipse for your project. [Enable Annotation processing](https://www.eclipse.org/jdt/apt/introToAPT.php)
-
-It must compile. 
-
-Run Borg class in SwingUI project. 
-
-Add dependencies to understow and other dependencies in your maven project. 
-
-Design your rest services. 
-
-
-
-### 3. Tweeter
-
-For tweeter, you must go to [tweeter app](https://apps.twitter.com/) and create an application. When your application is created, you can see a new **tab key and access tokens**
-
-you can find some sample [here](http://twitter4j.org/en/code-examples.html)
-
-in particular 
-
-```java
-  public static void main(String args[]) throws Exception{
-    // The factory instance is re-useable and thread safe.
-    TwitterFactory factory = new TwitterFactory();
-    AccessToken accessToken = loadAccessToken(Integer.parseInt(args[0]));
-    Twitter twitter = factory.getInstance();
-    twitter.setOAuthConsumer("[consumer key]", "[consumer secret]");
-    twitter.setOAuthAccessToken(accessToken);
-    Status status = twitter.updateStatus(args[1]);
-    System.out.println("Successfully updated the status to [" + status.getText() + "].");
-    System.exit(0);
-  }
-  private static AccessToken loadAccessToken(int useId){
-    String token = // load from a persistent store
-    String tokenSecret = // load from a persistent store
-    return new AccessToken(token, tokenSecret);
-  }
-
-```
+3. you can provide you own Rest API for your tweeter account (http://twitter4j.org/en/index.html)[http://twitter4j.org/en/index.html]. 
 
 
 The goal is to design a clean CRUD API fo a business layer that allows to interact with your application using retful services.
