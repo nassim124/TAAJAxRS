@@ -41,9 +41,9 @@ You can have three choices.
 
 1. You can re-implement [swapi](https://swapi.co/)
 
-2. You can provide a rest access within the [Borg calendar](https://github.com/mikeberger/borg_calendar). In this case, you need to install the lombok tool for your IDE [](https://projectlombok.org/).
+2. You can provide a rest access within the [Borg calendar](https://github.com/mikeberger/borg_calendar). In this case, you need to install the [lombok tool](https://projectlombok.org/) for your IDE .
 
-3. you can provide you own Rest API for your tweeter account (http://twitter4j.org/en/index.html)[http://twitter4j.org/en/index.html]. 
+3. you can provide you own Rest API for your tweeter account [http://twitter4j.org/en/index.html](http://twitter4j.org/en/index.html). 
 
 
 The goal is to design a clean CRUD API fo a business layer that allows to interact with your application using retful services.
