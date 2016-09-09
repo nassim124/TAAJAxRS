@@ -45,6 +45,9 @@ You can have three choices.
 
 3. you can provide you own Rest API for your tweeter account [http://twitter4j.org/en/index.html](http://twitter4j.org/en/index.html). 
 
+For tweeter, you must go to [tweeter app](https://apps.twitter.com/) and create an application. When your application is created, you can see a new **tab key and access tokens**
+
+
 
 The goal is to design a clean CRUD API fo a business layer that allows to interact with your application using retful services.
 
