@@ -26,13 +26,17 @@ You can import this maven project in your favorite IDE.
 
 # Task 1
 
-Using this example, merge your business layer and create the restservices using the follwing project. 
+Using this example, select an example of RestServices. 
 
-The goal is to get a clean CRUD API for you business layer that allows to interact with your business services using retful services.
+1. You can re-implement [swapi](https://swapi.co/)
+2. You can provide a rest access to the [Borg calendar](https://github.com/mikeberger/borg_calendar)
+3. you can provide you own Rest API for your tweeter account (http://twitter4j.org/en/index.html)[http://twitter4j.org/en/index.html]. 
 
-Do not hesitate to follow the same package structure that the package structure used by JHipster.
 
-Maxime provides a more complete example https://github.com/maxleiko/taa-jpa. 
+The goal is to get a clean CRUD API for you a business layer that allows to interact with your application using retful services.
+
+
+Maxime provides a complete example with an integration with JPA. https://github.com/maxleiko/taa-jpa. 
 
 
 # Task 2. 
@@ -45,8 +49,4 @@ Look at the three files to understand how you can integrate swagger to your appl
 * https://github.com/maxleiko/taa-jpa/blob/master/src/main/java/web/rest/SwaggerResource.java
 * https://github.com/maxleiko/taa-jpa/blob/master/pom.xml#L59
 * https://github.com/maxleiko/taa-jpa/blob/master/src/main/java/app/RestApplication.java#L20
-
-
-
-
 
