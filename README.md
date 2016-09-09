@@ -45,8 +45,33 @@ You can have three choices.
 
 3. you can provide you own Rest API for your tweeter account [http://twitter4j.org/en/index.html](http://twitter4j.org/en/index.html). 
 
+### Tweeter
+
 For tweeter, you must go to [tweeter app](https://apps.twitter.com/) and create an application. When your application is created, you can see a new **tab key and access tokens**
 
+you can find some sample [here](http://twitter4j.org/en/code-examples.html)
+
+in particular 
+
+```java
+  public static void main(String args[]) throws Exception{
+    // The factory instance is re-useable and thread safe.
+    TwitterFactory factory = new TwitterFactory();
+    AccessToken accessToken = loadAccessToken(Integer.parseInt(args[0]));
+    Twitter twitter = factory.getInstance();
+    twitter.setOAuthConsumerKey("[consumer key]", "[consumer secret]");
+    twitter.setOAuthAccessToken(accessToken);
+    Status status = twitter.updateStatus(args[1]);
+    System.out.println("Successfully updated the status to [" + status.getText() + "].");
+    System.exit(0);
+  }
+  private static AccessToken loadAccessToken(int useId){
+    String token = // load from a persistent store
+    String tokenSecret = // load from a persistent store
+    return new AccessToken(token, tokenSecret);
+  }
+
+```
 
 
 The goal is to design a clean CRUD API fo a business layer that allows to interact with your application using retful services.
