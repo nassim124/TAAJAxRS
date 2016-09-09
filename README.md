@@ -1,11 +1,20 @@
 TAA Labs
 ===================
 
-The goal of this lab is to add support of restful wabservices for your application. 
+The goal of this lab is to add support of restful webservices for an application. 
 
-In order to initialize your project, we provide a tiny sample project to show how to run an JAX-RS application, embedded in Undertow app server, fired up in a `main()` method.
+In order to initialize your project, we provide a tiny sample project to show how to run an JAX-RS application, embedded in Undertow app server, fired up in a `main()` method. 
 
-### Getting started
+Undertow is a flexible performant web server written in java, providing both blocking and non-blocking API’s based on NIO.
+
+Undertow has a composition based architecture that allows you to build a web server by combining small single purpose handlers. The gives you the flexibility to choose between a full Java EE servlet 3.1 container, or a low level non-blocking handler, to anything in between.
+
+Undertow is designed to be fully embeddable, with easy to use fluent builder APIs. Undertow’s lifecycle is completely controlled by the embedding application.
+
+
+### Getting started. 
+
+Fork this project. 
 
 Just build the project:
 
@@ -26,17 +35,21 @@ You can import this maven project in your favorite IDE.
 
 # Task 1
 
-Using this example, select an example of RestServices. 
+Using this example, select an example of RestServices you could build.
+
+You can have three choices. 
 
 1. You can re-implement [swapi](https://swapi.co/)
-2. You can provide a rest access to the [Borg calendar](https://github.com/mikeberger/borg_calendar)
+
+2. You can provide a rest access within the [Borg calendar](https://github.com/mikeberger/borg_calendar). In this case, you need to install the lombok tool for your IDE [](https://projectlombok.org/).
+
 3. you can provide you own Rest API for your tweeter account (http://twitter4j.org/en/index.html)[http://twitter4j.org/en/index.html]. 
 
 
-The goal is to get a clean CRUD API for you a business layer that allows to interact with your application using retful services.
+The goal is to design a clean CRUD API fo a business layer that allows to interact with your application using retful services.
 
 
-Maxime provides a complete example with an integration with JPA. https://github.com/maxleiko/taa-jpa. 
+Maxime provides a complete example with an integration with JPA. https://github.com/maxleiko/taa-jpa if require. 
 
 
 # Task 2. 
