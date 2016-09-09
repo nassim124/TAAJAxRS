@@ -89,7 +89,7 @@ in particular
     TwitterFactory factory = new TwitterFactory();
     AccessToken accessToken = loadAccessToken(Integer.parseInt(args[0]));
     Twitter twitter = factory.getInstance();
-    twitter.setOAuthConsumerKey("[consumer key]", "[consumer secret]");
+    twitter.setOAuthConsumer("[consumer key]", "[consumer secret]");
     twitter.setOAuthAccessToken(accessToken);
     Status status = twitter.updateStatus(args[1]);
     System.out.println("Successfully updated the status to [" + status.getText() + "].");
