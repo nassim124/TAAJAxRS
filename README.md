@@ -45,7 +45,37 @@ You can have three choices.
 
 3. you can provide you own Rest API for your tweeter account [http://twitter4j.org/en/index.html](http://twitter4j.org/en/index.html). 
 
-### Tweeter
+### 1. SWAPI
+
+Create your domain class,
+
+Create your CRUD Services
+
+Create your REST Services.
+
+### 2. Borg
+
+Clone the project. 
+
+Get the [lombok tool](https://projectlombok.org/) and run it for eclipse. 
+
+Restart eclipse. 
+
+Import the project as maven project. 
+
+Enable Annotation processing for eclipse for your project. [Enable Annotation processing](https://www.eclipse.org/jdt/apt/introToAPT.php)
+
+It must compile. 
+
+Run Borg class in SwingUI project. 
+
+Add dependencies to understow and other dependencies in your maven project. 
+
+Design your rest services. 
+
+
+
+### 3. Tweeter
 
 For tweeter, you must go to [tweeter app](https://apps.twitter.com/) and create an application. When your application is created, you can see a new **tab key and access tokens**
 
